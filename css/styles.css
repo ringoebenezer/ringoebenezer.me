@@ -1,0 +1,189 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    height: auto;
+}
+
+body {
+    width: 100%;
+    background-image: url(../assets/images/backbg.jpg);
+    background-size: cover;
+    background-repeat: repeat-y;
+    /* overflow-x: hidden; */
+}
+
+.heroimage {
+    height: 100vh;
+}
+
+.masukiText {
+    /* background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d); */
+    background-image: linear-gradient( 109.6deg, rgba(244, 255, 32, 1)11.2%, rgba(255, 115, 68, 1) 100.6%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: cover;
+    color: transparent;
+}
+
+.hero {
+    margin-top: 190px;
+}
+
+.masuki_section {
+    font-size: 5vw;
+}
+
+[hireme] {
+    position: absolute;
+    text-align: center;
+    background-color: red;
+    bottom: calc(100vh - 80%);
+}
+
+.pagechild {
+    height: 100vh;
+    width: 100%;
+}
+
+.headerSm {
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+.headerBg {
+    font-size: 6vw;
+    font-weight: bolder;
+}
+
+[contact_social_links]>a {
+    text-decoration: none;
+    margin: 10px;
+    font-size: 25px;
+    transition: 0.7s;
+    color: black;
+}
+
+[contact_social_links]>a:hover {
+    color: grey;
+    transition: 0.7s;
+}
+
+[masuki-box] {
+    width: 100%;
+    margin: 10px 0 10px 0;
+    padding: 5px 1% 5px 1%;
+    background: transparent;
+    border-radius: 20px;
+    outline: none;
+    text-indent: 10px;
+    border: 2px solid #ffa60057;
+}
+
+[masuki-box]:focus {
+    border: 2px solid black;
+}
+
+#contact_card {
+    transition: 0.3s;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+}
+
+#contact_card:hover {
+    transition: 0.3s;
+    box-shadow: 0px 0px 30px #ffa60071;
+}
+
+.masuki_cards {
+    transition: 0.3s;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+}
+
+.card-body {
+    transform: translateZ(50px);
+    -webkit-transform: translateZ(50px);
+}
+
+.masuki_cards:hover {
+    transition: 0.3s;
+    box-shadow: 0px 0px 30px #ffa60071;
+}
+
+footer {
+    padding-top: 5%;
+    height: auto;
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+}
+
+@media (max-width:768px) {
+    .masuki_section {
+        text-align: center;
+        font-size: 13vw;
+    }
+    .masuki_right {
+        display: none;
+    }
+    .pagechild {
+        height: auto;
+        width: 100%;
+    }
+    /* come back here to fix */
+    .masuki_cards {
+        margin: 20px;
+    }
+    .headerSm {
+        font-size: 5vw;
+    }
+    .headerBg {
+        font-size: 12vw;
+    }
+    .navbar-brand {
+        text-align: center;
+    }
+    #contact_card {
+        margin: 20px;
+    }
+    [masuki-box] {
+        border: 2px solid #ffa600;
+    }
+}
+
+@media (max-width:425px) {
+    .masuki_section {
+        font-size: 15vw;
+    }
+    .pagechild {
+        height: auto;
+        width: 100%;
+    }
+    /* come back here to fix */
+    .masuki_cards {
+        margin: 20px;
+    }
+    .headerSm {
+        font-size: 5vw;
+    }
+    .headerBg {
+        font-size: 12vw;
+    }
+    .navbar-brand {
+        text-align: center;
+    }
+    #contact_card {
+        margin: 20px;
+    }
+    [masuki-box] {
+        border: 2px solid #ffa600;
+    }
+}

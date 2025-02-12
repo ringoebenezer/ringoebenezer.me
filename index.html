@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Design, UX/UI & Software development professional. Hire me to develop and design your software with best quality at affordable price.">
+    <meta name="keywords" content="innocent masuki,Innocent Masuki, INNOCENT MASUKI,masuki,Masuki,MASUKI,INNOCENT,innocent,Software developer in Tanzania, Tanzania, IT, Android Developer,Tanzania IT, Tanzania, UX,UI,Design,mobile,developer,">
+    <meta name="author" content="Innocent Masuki">
+
+    <meta property="og:image" content="./assets/social.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="2000">
+    <meta property="og:image:height" content="2000">
+    <meta property="og:url" content="https://innocentmasuki.me">
+    <meta property="og:title" content="Software Developer">
+    <meta property="og:description" content="Design, UI/UI & Software development professional. Hire me to develop and design your software with best quality at affordable price.">
+
+    <!-- <meta property="og:type" content="website">removed website attribut -->
+
+
+    <title>Innocent Masuki</title>
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./bootstrap-5.0.0-dist/css/bootstrap.min.css">
+    <link rel='icon' href='./assets/favicon.png' type='image/png' />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&family=Joti+One&family=Libre+Barcode+128+Text&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta name="google-site-verification" content="e09lzl2rSvcFw3GvDun3nV1nfIzBJ1OybgFtKkezHaw" />
+
+    <style>
+        .firework {
+            position: absolute;
+        }
+        
+        .explosion {
+            position: absolute;
+            left: -2px;
+            bottom: 0;
+            width: 4px;
+            height: 80px;
+            transform-origin: 50% 100%;
+            /* background-color: rgba(0,0,0,.2); */
+            overflow: hidden;
+        }
+        
+        .explosion:nth-child(1) {
+            transform: rotate(0deg) translateY(-15px);
+        }
+        
+        .explosion:nth-child(2) {
+            transform: rotate(30deg) translateY(-15px);
+        }
+        
+        .explosion:nth-child(3) {
+            transform: rotate(60deg) translateY(-15px);
+        }
+        
+        .explosion:nth-child(4) {
+            transform: rotate(90deg) translateY(-15px);
+        }
+        
+        .explosion:nth-child(5) {
+            transform: rotate(120deg) translateY(-15px);
+        }
+        
+        .explosion:nth-child(6) {
+            transform: rotate(150deg) translateY(-15px);
+        }
+        
+        .explosion:nth-child(7) {
+            transform: rotate(180deg) translateY(-15px);
+        }
+        
+        .explosion:nth-child(8) {
+            transform: rotate(210deg) translateY(-15px);
+        }
+        
+        .explosion:nth-child(9) {
+            transform: rotate(240deg) translateY(-15px);
+        }
+        
+        .explosion:nth-child(10) {
+            transform: rotate(270deg) translateY(-15px);
+        }
+        
+        .explosion:nth-child(11) {
+            transform: rotate(300deg) translateY(-15px);
+        }
+        
+        .explosion:nth-child(12) {
+            transform: rotate(330deg) translateY(-15px);
+        }
+        
+        .explosion::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 100%;
+            height: 40px;
+        }
+        
+        @keyframes explosion {
+            0% {
+                top: 100%;
+            }
+            33%,
+            100% {
+                top: -50%;
+            }
+        }
+        
+        #firework1 {
+            left: 50%;
+            top: 50%;
+            transform: scale(1);
+        }
+        
+        #firework1 .explosion::before {
+            animation: explosion 2s ease-in-out infinite;
+            background-color: #FC67F7;
+        }
+        
+        #firework2 {
+            left: 40%;
+            top: 45%;
+            transform: scale(.7);
+        }
+        
+        #firework2 .explosion::before {
+            animation: explosion 2s .6s ease-in-out infinite;
+            background-color: #7DFE63;
+            background-color: #0d6efd;
+        }
+        
+        #firework3 {
+            left: 60%;
+            top: 65%;
+            transform: scale(.4);
+        }
+        
+        #firework3 .explosion::before {
+            animation: explosion 2s .4s ease-in-out infinite;
+            background-color: #ffa500;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-glass" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand navbar-left" href="#">innocentmasuki.me</a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav navbar-center me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#works">works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">contact</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav navbar-right me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/Diggerati" target="_blank"><i class="fa fa-github"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://twitter.com/MasukiInnocent" target="_blank"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/innocent-masuki-988013173/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.instagram.com/iamdigerati/" target="_blank"><i class="fa fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+    </nav>
+
+    <main>
+        <div class="container-fluid heroimage">
+            <div class="container hero">
+                <div class="row" align="center">
+                    <div class="col-md col-sm masuki_section">
+                        <div>
+                            <span>Hy! 👋 I'm</span>
+                            <br>
+                            <span style="font-family: 'Libre Barcode 128 Text', cursive;">Innocent Masuki</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row" style="padding: 5% 10% 0 10%;">
+                    <div class="col-sm" align="center">
+                        <a href="mailto:innocentmasuki99@gmail.com" class="btn btn-masuki">Hire Me</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div style="scroll-behavior: smooth;">
+            <div class="pagechild" id="services">
+                <div class="container" style="height: 100%; width: 100%; z-index: 3;">
+                    <div class="row" style="padding: 12% 0 12% 0;">
+                        <div class=" col-lg-4" style="padding-left: 30px;">
+                            <span class="headerSm">My Awesome</span>
+                            <br>
+                            <span class="masukiText headerBg">Services</span>
+                            <p>Howdy! I offer services with outstanding outcome... Best solutions with million bonus features on products I make. I am always evolving and constantly evaluating.</p>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="row">
+                                <div class="col-lg">
+                                    <div class="card masuki_cards bg-glass" style="border-radius: 20px;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Design</h5>
+                                            <p class="card-text">Art, Fast, Beauty, attractive and more... I can design for you. bring your work and dont expect less. </p>
+                                            <a href="" class="btn btn-masuki">learn more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <div class="card bg-glass masuki_cards" style="border-radius: 20px;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">UX/UI</h5>
+                                            <p class="card-text">Welcome, I will design for you best user experience and user interface on your software... all apps I create are attactive and meets the needs of 99% of users.</p>
+                                            <a href="" class="btn btn-masuki">learn more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <div class="card masuki_cards bg-glass" style="border-radius: 20px;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Development</h5>
+                                            <p class="card-text">I develop Android, iOS and web application and bring awesome software that you ought to use daily.</p>
+                                            <a href="" class="btn btn-masuki">learn more</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="pagechild" id="works">works</div> -->
+            <div class="pagechild" id="about">
+                <div class="container">
+                    <div class="row" style="padding: 12% 0 12% 0;">
+                        <div class="col-md" align="center">
+                            <span class="headerSm">Get to know</span>
+                            <br>
+                            <span class="masukiText headerBg">About Me</span>
+                            <p>I'm a software developer dedicated to things I love. One of the things is the software and technologies that surround it. I possess a different set of skills, like frontend development, web, UI and UX design, and project management, know a lot about android development and design.</p>
+                            <p><strong>more about me,</strong></p>
+                            <p>Drawing, User centered Design, Juice, Movies & Music</p>
+
+                            <a href="https://docs.google.com/document/d/1AfhSLWntV1B-zvpPEygaJwGbHDQRTN7HQPoVbtmhn24/edit?usp=sharing" target="_blank" class="btn btn-masuki" style="margin-top: 3%;">Download my CV</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="pagechild" id="contact">
+                <div class="container">
+                    <div class="row" style="padding: 12% 0 12% 0;">
+                        <div class="col-lg-4" style="padding-left: 30px;">
+                            <span class="headerSm">Get in touch</span>
+                            <br>
+                            <span class="masukiText headerBg">With Me</span>
+                            <br>
+                            <div contact_social_links style="margin-bottom: 20px;">
+                                <a href="tel:+255766073577"><i class="fa fa-phone"></i></a>
+                                <a href="https://github.com/Diggerati" target="_blank"><i class="fa fa-github"></i></a>
+                                <a href="https://twitter.com/MasukiInnocent" target="_blank"><i class="fa fa-twitter"></i></a>
+                                <a href="https://www.linkedin.com/in/innocent-masuki-988013173/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                <a href="https://www.instagram.com/iamdigerati/" target="_blank"><i class="fa fa-instagram"></i></a>
+                                <a href="https://wa.me/255766073577?text=Hello+Innocent&lang=en"><i class="fa fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="card bg-glass" id="contact_card" style="border-radius: 20px;">
+                                <div class="card-body">
+                                    <form action="https://formspree.io/f/xzbyevao" method="POST">
+                                        <input masuki-box type="text" name="guest_name" id="guest-name" placeholder="Full Name" required>
+                                        <input masuki-box type="email" name="guest_mail" id="guest-mail" placeholder="yourname@example.com" required>
+                                        <input masuki-box type="text" name="message_sub" id="subject" placeholder="Subject (optional)">
+                                        <textarea name="guest_message" id="guest-message" masuki-box rows="6" style="resize: none;" placeholder="your message" required></textarea>
+                                        <a href="./index.html/#contact" target="_blank" rel="noopener noreferrer"><button type="submit" name="send_mail" class="btn btn-masuki">Send <i class="fa fa-send"></i></button></a>
+                                        <div class="results"></div>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="innocent" data-description="Support me on Buy me a coffee!" id="coffee" data-message="" data-color="#ffa500" data-position="right"
+            data-x_margin="18" data-y_margin="15"></script>
+
+    </main>
+
+
+    <footer align="center">
+        <span style="color: rgba(134, 134, 134, 0.555);">&copy; <script>document.write(new Date().getFullYear());</script> | Thank you for visiting  <span style="font-family: 'Sacramento', cursive; font-size: 32px;">innocentmasuki.me</span> </span>
+    </footer>
+
+    
+    
+    <script bot-name="meniscus-for-business" 
+bot-height="500px" bot-width="300px" bot-id="ff9a1334-ea70-4bb9-8438-50268f92df13"
+src=https://cdn.meniscus.co/meniscus-cdn/meniscus.min.js>
+</script>
+    
+    
+    
+    <script src="./js/main.js"></script>
+    <script type="text/javascript" src="./js/vanilatilt.js"></script>
+    <script src="./bootstrap-5.0.0-dist/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".masuki_cards"), {
+            max: 25,
+            speed: 500
+        });
+
+        // VanillaTilt.init(document.getElementById("contact_card"), {
+        //     max: 2,
+        //     speed: 300
+        // });
+    </script>
+
+</body>
+
+</html>
